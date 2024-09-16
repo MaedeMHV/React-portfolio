@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar{
+  @apply  flex flex-col justify-center items-center h-screen fixed bg-opacity-80 z-50 backdrop-blur-2xl  bg-black ;
+}
+
+.navItem{
+  @apply flex flex-row gap-3 text-white
+}
+.navItem.active{
+  @apply text-yellow-300
+}
+.btn{
+  @apply py-2 px-4 border-[1px] border-white rounded-3xl capitalize active:opacity-50
+}
+.contactInput{
+  @apply  border-[1px]  border-stone-300 rounded-lg p-2 shrink-0
+}
+.titleOne{
+  @apply text-lg capitalize text-center text-stone-700 font-black dark:!text-white 
+}
+.underline{
+  @apply border-b-4 border-green-700 w-[100px] mt-2 mb-5
+}
+
+.slick-slider, .slick-list{
+  @apply overflow-visible }
+
+ .slick-slide{
+  @apply p-6 bg-cyan-800 dark:bg-neutral-900 h-[200px] mr-2 border-t-4 border-yellow-400  text-white rounded-md !relative shadow-md !flex !flex-col !items-center !justify-center
+ }
+ .techBox.show{
+@apply translate-x-0 duration-700
+ }
+ .techBox{
+  @apply translate-x-28 duration-700
+   }
+
+   .fixed-btn button{
+    @apply border-2 border-white shadow-md dark:bg-zinc-900 bg-cyan-900 p-2 rounded-full
+   }
